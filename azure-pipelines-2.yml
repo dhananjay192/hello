@@ -53,6 +53,6 @@ steps:
  
 
       # Deploy to Azure Functions
-      cd <GitHub Repository Name>
+      cd $(GitHub Repository Name)
       az functionapp deployment source config-local-git --name $(azureFunctionAppName) --resource-group $(resourceGroupName)
       az functionapp deployment source sync --name $(azureFunctionAppName) --resource-group $(resourceGroupName)
