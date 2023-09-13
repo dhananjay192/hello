@@ -4,4 +4,10 @@
 # @app.route("/")
 # def hello():
 #     return "Hello, World!"
-print("hello")
+#print("hello")
+import azure.functions as func
+
+ 
+
+def main(req: func.HttpRequest) -> func.HttpResponse:
+    return func.HttpResponse("Hello, Azure Functions!")
